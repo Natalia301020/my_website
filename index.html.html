@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/User/AppData/Local/Temp/Rar$EXa15000.46365/index.html -->
+<html lang="uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Калькулятор вартості доставки — Розширена версія</title>
+  <link rel="stylesheet" href="file:///C:/Users/User/AppData/Local/Temp/Rar$EXa15000.46365/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Розширений калькулятор вартості доставки</h1>
+      <p class="subtitle">Розрахунок за містом, вагою та типом доставки</p>
+    </div>
+  </header>
+
+  <main class="container wide">
+    <section class="card form-card">
+      <h2>Параметри доставки</h2>
+
+      <form id="calcForm">
+        <label>Місто</label>
+        <select id="city" required=""><option value="kyiv">Київ</option><option value="poltava">Полтава</option><option value="lviv">Львів</option><option value="odesa">Одеса</option><option value="kharkiv">Харків</option><option value="dnipro">Дніпро</option><option value="mykolaiv">Миколаїв</option><option value="sumy">Суми</option><option value="rivne">Рівне</option><option value="zhytomyr">Житомир</option><option value="ternopil">Тернопіль</option></select>
+
+        <label>Вага (кг)</label>
+        <input id="weight" type="number" step="0.01" min="0.01" required="">
+
+        <label>Тип доставки</label>
+        <select id="type" required=""><option value="standard">Стандарт</option><option value="express">Експрес</option><option value="econom">Економ</option><option value="business">Бізнес-преміум</option></select>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Розрахувати</button>
+          <button type="button" id="clearBtn" class="btn">Очистити</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card result-card">
+      <h2>Результат</h2>
+      <div id="result" class="result-empty">Очікування введення даних...</div>
+    </section>
+
+    <section class="card history-card">
+      <h2>Історія</h2>
+      <div id="historyList">Немає записів</div>
+      <div class="history-actions">
+        <button id="exportBtn" class="btn">Експорт JSON</button>
+        <button id="clearHistoryBtn" class="btn">Очистити</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 — Розширений калькулятор доставки</small>
+    </div>
+  </footer>
+
+<script src="file:///C:/Users/User/AppData/Local/Temp/Rar$EXa15000.46365/script.js"></script>
+
+
+</body></html>
